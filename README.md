@@ -1,6 +1,6 @@
 # 🛡️ AI-IDS — AI-Based Network Intrusion Detection System
 
-> College Major Project · Python + React + TypeScript + MongoDB
+> Python + React + TypeScript + MongoDB
 
 ---
 
@@ -90,6 +90,6 @@ Dashboard is now at `http://localhost:5173`
 ---
 
 ## Made By
-Manan kathuria 
-simran Lakha
-Meeta
+-Manan kathuria 
+-simran Lakha
+-Meeta

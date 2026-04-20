@@ -90,6 +90,6 @@ Dashboard is now at `http://localhost:5173`
 ---
 
 ## Made By
--Manan kathuria 
--simran Lakha
--Meeta
+- Manan kathuria 
+- simran Lakha
+- Meeta

@@ -1,0 +1,22 @@
+2026-04-20 16:40:27,467  Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<run_aggregator() done, defined at C:\Users\manan\OneDrive\Desktop\major proejct\backend\features\aggregator.py:37> exception=NotFittedError("This IsolationForest instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.")>
+Traceback (most recent call last):
+  File "C:\Users\manan\OneDrive\Desktop\major proejct\backend\features\aggregator.py", line 65, in run_aggregator
+    await on_features_ready_fn(features)
+  File "C:\Users\manan\OneDrive\Desktop\major proejct\main.py", line 24, in on_features_ready
+    score, risk = detector.score(features)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manan\OneDrive\Desktop\major proejct\backend\ml\detector.py", line 70, in score
+    raw = self._model.decision_function([vector])[0]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\ensemble\_iforest.py", line 482, in decision_function
+    return self.score_samples(X) - self.offset_
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\ensemble\_iforest.py", line 536, in score_samples
+    return self._score_samples(X)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\ensemble\_iforest.py", line 545, in _score_samples
+    check_is_fitted(self)
+  File "C:\Users\manan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 1705, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This IsolationForest instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.

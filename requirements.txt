@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+scapy
+scikit-learn
+numpy
+pandas
+pymongo
+motor
+python-dotenv
+websockets
+python-multipart
